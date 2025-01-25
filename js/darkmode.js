@@ -1,4 +1,3 @@
-//Dark mode
 function toggleMode() {
     let body = document.body;
     let switchButton = document.querySelector(".switch");
@@ -9,7 +8,7 @@ function toggleMode() {
     switchButton.classList.toggle("dark");
 
     if (body.classList.contains("dark-mode")) {
-        lampIcon.textContent = "💡"; // Lamp stays same, just color changes
+        lampIcon.textContent = "💡";
         lampIcon.style.color = "yellow";
         localStorage.setItem("theme", "dark");
     } else {
@@ -19,7 +18,6 @@ function toggleMode() {
     }
 }
 
-// Load mode from localStorage
 window.onload = function () {
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");

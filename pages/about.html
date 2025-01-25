@@ -21,8 +21,8 @@
 
 <body>
     <div class="container">
-        <!-- header  -->
-        <header>
+         <!-- header  -->
+         <header>
             <div class="header-nav">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
@@ -38,24 +38,27 @@
                             </a>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="../pages/index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="../pages/list.html">Movie's List</a>
+                                    <a class="nav-link" href="../pages/list.html">Movie's List</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../pages/contact.html">Contact</a>
                                 </li>
                             </ul>
 
+                            <!-- Add the form for search -->
                             <form id="searchForm" class="d-flex" role="search">
                                 <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
                                     aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
 
+                            <!-- Add the container to show search results -->
                             <div id="movies" class="d-flex flex-wrap gap-3"></div>
 
+                            <!-- Add pagination container -->
                             <div id="pagination" class="mt-4 d-flex justify-content-center gap-2"></div>
 
                         </div>
@@ -66,22 +69,24 @@
                 </nav>
             </div>
         </header>
-
         <!-- section -->
-        <div id="moviesApi">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+        <section class="about-text">
+            <h1>About MovieZone</h1>
+            <p>Welcome to MovieZone! We are your go-to platform for discovering the latest and most popular movies.
+                Our website provides movie details, ratings, and recommendations to help you find the best films to
+                watch.</p>
 
-         <!-- footer -->
-         <footer>
+            <h2>Our Mission</h2>
+            <p>Our goal is to bring movie lovers together by offering a user-friendly platform where they can explore
+                movies, read descriptions, and find what to watch next.</p>
+
+            <h2>Data Source</h2>
+            <p>We use <a href="https://www.themoviedb.org/" target="_blank">The Movie Database (TMDB)</a> API to fetch
+                the latest movie details.</p>
+        </section>
+
+        <!-- footer -->
+        <footer>
             <div class="footer-container">
                 <div class="footer-logo">
                     <h2>Movie Corner</h2>
@@ -108,8 +113,7 @@
         </footer>
     </div>
 
-        <script src="../js/API.js"></script>
-        <script src="../js/darkmode.js"></script>
+    <script src="../js/darkmode.js"></script>
 </body>
 
 </html>
